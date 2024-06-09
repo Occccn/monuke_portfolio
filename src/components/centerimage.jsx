@@ -4,7 +4,7 @@ import '../assets/CenterImage.css'; // CSSファイルをインポート
 const CenterImage = () => {
     return (
 <div class="centered-circle">
-    <img src="test.png" alt="Circular Icon" />
+    <img src="monuke.png" alt="Circular Icon" />
 </div>
     );
 };

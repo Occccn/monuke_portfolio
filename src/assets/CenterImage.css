@@ -10,5 +10,23 @@
     width: 250px; /* 画像のサイズ、必要に応じて調整 */
     height: 250px; /* 画像のサイズ、必要に応じて調整 */
     object-fit: cover; /* 画像が枠に合わせて切り抜かれるようにする */
-    border: 2px solid gray;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 画像に影をつける */
+    max-width: 100%; /* 画像がコンテナを超えないように */
+    opacity: 0; /* 初期状態では透明 */
+    animation: fadeInScale 0.4s ease-out forwards; /* アニメーションを適用 */
 }
+
+
+
+  
+  /* キーフレームアニメーションの定義 */
+  @keyframes fadeInScale {
+    from {
+      transform: scale(0.3); /* 開始時には画像を小さく */
+      opacity: 0;
+    }
+    to {
+      transform: scale(1); /* 最終的には通常サイズ */
+      opacity: 1;
+    }
+  }
