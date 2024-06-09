@@ -1,0 +1,61 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    grid-gap: 40px; /* カード間のギャップ */
+    padding: 20px; /* コンテナのパディング */
+    margin-top: 50px;
+
+  }
+
+  .card-other-work {
+    background-color: #c7e9c76c;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card-other-work:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+
+  }
+
+  .card-other-work-title {
+    align-self: flex-start; /* 右端に寄せる */
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  
+  @media (max-width: 600px) {
+    .card-container {
+      grid-template-columns: 1fr; /* スクリーンが小さい場合は1列に */
+    }
+  }
+
+
+
+  .card-video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    display: flex; /* Flexboxを有効化 */
+    justify-content: center; /* 水平方向の中心揃え */
+    align-items: center; /* 垂直方向の中心揃え */
+  }
+  
+  .card-video-responsive iframe {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 中央からの相対位置 */
+    border: none; 
+  }

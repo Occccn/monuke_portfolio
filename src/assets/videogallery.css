@@ -1,0 +1,53 @@
+.radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .radio-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* ラベル間の隙間を適切に設定 */
+    margin-top: 50px;
+  }
+  .sort-group {
+    margin-right: 30px;
+
+  }
+  
+/* 共通のスタイル */
+.radio-label-sort,
+.radio-label-feat {
+  padding: 10px 20px;
+  background-color: #f2f2f2; /* 初期背景色 */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  user-select: none;
+}
+
+/* ホバー時の背景色変更 */
+.radio-label-sort:hover,
+.radio-label-feat:hover {
+  background-color: #e0e0e0;
+}
+
+/* チェックされたときの背景色、文字色、変形（拡大） */
+input[type="radio"]:checked + .radio-label-sort {
+  background-color: #e12885; /* ソートラベル用の色 */
+  color: white;
+  transform: scale(1.1);
+}
+
+input[type="radio"]:checked + .radio-label-feat {
+  background-color: #137a7f; /* フィーチャーラベル用の色 */
+  color: white;
+  transform: scale(1.1);
+}
+
+/* フォーカスされたときのボックスシャドウ */
+input[type="radio"]:focus + .radio-label-sort,
+input[type="radio"]:focus + .radio-label-feat {
+  box-shadow: 0 0 0 3px rgba(76,175,80, 0.5);
+}

@@ -20,10 +20,9 @@ const FullScreenMenu = () => {
                 <div className="fullscreen-menu">
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/tmp">biography</Link></li>
-                        <li><Link to="/tmp">write song</Link></li>
-                        <li><Link to="/tmp">drum performance</Link></li>
-                        <li><Link to="/tmp">sound make</Link></li>
+                        <li><Link to="/Vocaloid">vocaloid original</Link></li>
+                        <li><Link to="/Vocaloid">sound make</Link></li>
+                        <li><Link to="/Otherwork">other works</Link></li>
                     </ul>
                 </div>
             )}
