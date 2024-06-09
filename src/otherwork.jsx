@@ -4,7 +4,7 @@ import './assets/otherwork.css';
 
 
 const Card = ({ title, description,url}) => (
-    <div className="card-other-work">
+    <div className = "card-other-work">
       <h3 className='card-other-work-title'>{title}</h3>
       <div className="card-video-responsive">
       <iframe
