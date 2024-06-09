@@ -1,0 +1,31 @@
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 20px;
+} */
+
+header {
+    position: fixed; /* ヘッダーをページの上部に固定 */
+    top: 0;
+    left: 0;
+    width: 100%; /* ヘッダーの幅を画面全体に広げる */
+    z-index: 10; /* ヘッダーが他の要素より前面にくるように設定 */
+    background-color: #0f9e7f;
+    height: 80px; /* ヘッダーの高さを80pxに設定 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    justify-content: space-between; /* ヘッダーの子要素を左右に分散 */
+    align-items: center; /* 子要素を中央揃え（垂直方向） */
+}
+
+
+
+h1 {
+    flex-grow: 1; /* h1タグが残りのスペースを埋める */
+    text-align: center; /* タイトルのテキストを中央揃え */
+    margin: 0; /* マージンをなくす */
+    color: white;
+}

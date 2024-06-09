@@ -1,0 +1,14 @@
+.centered-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centered-circle img {
+    border-radius: 50%; /* 画像を円形にする */
+    width: 250px; /* 画像のサイズ、必要に応じて調整 */
+    height: 250px; /* 画像のサイズ、必要に応じて調整 */
+    object-fit: cover; /* 画像が枠に合わせて切り抜かれるようにする */
+    border: 2px solid gray;
+}
