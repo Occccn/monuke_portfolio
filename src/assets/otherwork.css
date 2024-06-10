@@ -12,13 +12,15 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 600px;
-    height: 500px;
+    width: 500px;  /* レスポンシブ対応のためパーセンテージで指定 */
+    max-width: 600px;  /* 最大幅を600pxに限定 */
+    height: auto;  /* 高さを自動調整 */
     display: flex;
     flex-direction: column;
     overflow: hidden;
     transition: all 0.3s ease;
   }
+
   
   .card-other-work:hover {
     transform: translateY(-5px);
@@ -33,11 +35,6 @@
     margin-top: 0px;
   }
   
-  @media (max-width: 600px) {
-    .card-container {
-      grid-template-columns: 1fr; /* スクリーンが小さい場合は1列に */
-    }
-  }
 
 
 
@@ -59,3 +56,18 @@
     transform: translate(-50%, -50%); /* 中央からの相対位置 */
     border: none; 
   }
+
+  @media (max-width: 600px) {
+    .card-other-work {
+      width: 100%;  /* スマホ表示時はカードの最大幅を画面の90%に */
+    }
+    .card-container {
+      grid-template-columns: 1fr;
+      grid-gap: 20px; /* カード間のギャップ */
+    }
+  
+    .card-other-work-title {
+      font-size: 12px;  /* スマホ表示時のタイトルのフォントサイズを小さくする */
+    }
+  }
+

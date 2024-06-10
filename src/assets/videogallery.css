@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    flex-direction: column; 
   }
   
   .radio-group div {
@@ -14,6 +16,30 @@
   .sort-group {
     margin-right: 30px;
 
+  }
+  
+
+/* メディアクエリを使用して、特定の画面幅以上でデスクトップ向けのスタイルを適用 */
+@media (min-width: 768px) {
+    .card {
+      width: 450px; /* カードの幅をデスクトップでは固定 */
+    }
+    .radio-group {
+      flex-direction: row; /* デスクトップでは横並びに戻す */
+    }
+  }
+  
+  /* タブレットおよびデスクトップ用の追加のスタイル調整 */
+  @media (min-width: 768px) {
+    .container {
+      width: 80%; /* デスクトップとタブレットでコンテナの幅を広げる */
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; /* カード間に均等なスペースを作る */
+    }
+    .card {
+      margin: 20px; /* カード間のマージンを調整 */
+    }
   }
   
 /* 共通のスタイル */
