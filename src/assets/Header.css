@@ -1,13 +1,3 @@
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    top: 20px;
-} */
-
 header {
     position: fixed; /* ヘッダーをページの上部に固定 */
     top: 0;
@@ -44,6 +34,9 @@ h1 {
     background-color: #f4f4f4;
 }
 
+
+
+
 .header-title {
     text-decoration: none; /* リンクの下線を消す */
     color: #333; /* リンクの色 */
@@ -67,4 +60,17 @@ h1 {
 
 .header-nav ul li a:hover {
     color: #f4f4f4;
+}
+
+
+/* Header.css */
+.header-nav {
+    display: block; /* 通常は表示 */
+}
+
+
+@media (max-width: 768px) {
+    .header-nav {
+        display: none; /* スマホでは非表示 */
+    }
 }

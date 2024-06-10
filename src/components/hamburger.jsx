@@ -16,7 +16,7 @@ const FullScreenMenu = () => {
                 <div></div>
                 <div></div>
             </div>
-            {isOpen && (
+            {isOpen  && (
                 <div className="fullscreen-menu">
                     <ul>
                         <li><Link to="/">Home</Link></li>

@@ -5,9 +5,10 @@
   margin: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
-  width: 450px; /* カードの幅を固定 */
+  width: 100%; /* カードの幅を固定 */
   height: auto; /* 高さを内容に応じて自動調整 */
 }
+
 
 .card:hover {
   transform: translateY(-5px);
