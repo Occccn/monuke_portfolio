@@ -11,10 +11,15 @@
     display: flex;
     align-items: center;
     gap: 10px;  /* ラベル間の隙間を適切に設定 */
-    margin-top: 50px;
+
   }
   .sort-group {
     margin-right: 30px;
+    margin-top: 70px;
+
+  }
+  .feat-group {
+    margin-top: 0px;
 
   }
   
@@ -26,6 +31,10 @@
     }
     .radio-group {
       flex-direction: row; /* デスクトップでは横並びに戻す */
+    }
+    .feat-group {
+      margin-top: 70px;
+  
     }
   }
   

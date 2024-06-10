@@ -111,7 +111,7 @@ function VideoGallery() {
     <input type="radio" id="desc" name="sortOrder" value="desc" hidden checked={sortOrder === 'desc'} onChange={handleSortChange} />
     <label className="radio-label-sort" htmlFor="desc">新しい順</label>
   </div>
-  <div>
+  <div className='feat-group'>
     <input type="radio" id="all" name="feat" value="all" hidden checked={featFilter === 'all'} onChange={handleFeatChange} />
     <label className="radio-label-feat" htmlFor="all">All</label>
 
