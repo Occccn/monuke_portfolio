@@ -6,7 +6,7 @@ import VideoGallery from './components/videogallery.jsx';
 function Vocaloid() {
   return (
     <>
-      <Header title = 'monuke'/>
+      <Header title = 'Vocaloid'/>
       <VideoGallery/>
     </>
   );

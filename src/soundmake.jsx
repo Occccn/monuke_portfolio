@@ -16,7 +16,7 @@ const Card = ({ title, description,url}) => (
   const Soundmake = () => {
     return (
         <>
-    <Header title = 'monuke'/>
+    <Header title = 'Sound Make'/>
         <div className="soundmake-card-container">
             <div className="soundmake-card-other-work">
             <h3 className='card-other-work-title'>soundmake</h3>

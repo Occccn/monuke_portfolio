@@ -21,7 +21,7 @@ const FullScreenMenu = () => {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/Vocaloid">vocaloid original</Link></li>
-                        <li><Link to="/Vocaloid">sound make</Link></li>
+                        <li><Link to="/Soundmake">sound make</Link></li>
                         <li><Link to="/Otherwork">other works</Link></li>
                     </ul>
                 </div>

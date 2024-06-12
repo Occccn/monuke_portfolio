@@ -13,7 +13,7 @@ const Header = ({title}) => {
     return (
         <>
         <header>
-            <h1>{title}</h1>
+            <div className='header-title'><h2 className='subtitle'>monuke</h2><h1>{title}</h1></div>
             <nav className="header-nav">
                 <ul>
                     <li><Link to="/">Home</Link></li>
