@@ -28,6 +28,14 @@
   margin-bottom: 10px;
 }
 
+.card-title-other {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+
 .card-description {
   font-size: 14px;
   color: #666;

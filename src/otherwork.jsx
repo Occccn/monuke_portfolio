@@ -27,7 +27,7 @@ const Card = ({ title, description,url}) => (
     return (
         <>
     <Header title = 'Others'/>
-      <div className="card-container">
+      <div className="container">
       {cardsData.map(card => (
         <OtherCard key={card.url} url={card.url} title={card.title} description={card.description}/>
       ))}

@@ -7,7 +7,7 @@ function App() {
     <>
       <Header title = 'Home'/>
       <CenterImage/>
-      <div >
+      <div>
         <h2>monuke</h2>
         <p>Vocaloid pord / compose / drums</p>
         <p>いろんな音楽を作ります</p>
