@@ -6,7 +6,7 @@ function OtherCard({ url, title, description }) {
 
   return (
     <div className='card' >
-      <h2 className="card-title">{title}</h2>
+      <h2 className="card-title-other">{title}</h2>
       <div className="video-responsive">
         <iframe
           src={url}
