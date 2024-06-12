@@ -5,7 +5,7 @@ import SocialLinks from './components/sociallinks.jsx';
 function App() {
   return (
     <>
-      <Header title = 'monuke'/>
+      <Header title = 'Home'/>
       <CenterImage/>
       <div >
         <h2>monuke</h2>

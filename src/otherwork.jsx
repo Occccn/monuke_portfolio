@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/header.jsx';
-import './assets/otherwork.css';
-
+import './assets/card.css';
+import OtherCard from './components/othercard';
 
 const Card = ({ title, description,url}) => (
     <div className = "card-other-work">
@@ -26,11 +26,11 @@ const Card = ({ title, description,url}) => (
     ];
     return (
         <>
-    <Header title = 'monuke'/>
+    <Header title = 'Others'/>
       <div className="card-container">
-        {cardsData.map((card, index) => (
-          <Card key={index} title={card.title} description={card.description} url = {card.url} />
-        ))}
+      {cardsData.map(card => (
+        <OtherCard key={card.url} url={card.url} title={card.title} description={card.description}/>
+      ))}
       </div>
       </>
     );
