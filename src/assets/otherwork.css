@@ -72,3 +72,13 @@
     }
   }
 
+
+  /* 親コンテナのスタイルを追加して、カードを縦に並べる */
+.container-other {
+  display: flex;
+  flex-direction: column; /* アイテムを縦に並べる */
+  align-items: center; /* アイテムを中央に揃える */
+  margin: auto; /* ブラウザの中央にコンテナを配置 */
+  width: 300px; /* コンテナの幅を中身に合わせる */
+  margin: 100px auto 0; /* 上に50pxのマージンを追加し、他はautoで中央に */
+}

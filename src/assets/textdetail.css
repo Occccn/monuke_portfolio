@@ -38,3 +38,36 @@
 .fullscreen-text ul li a:hover {
     text-decoration: underline;
 }
+
+.showMore {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px; /* サイズはお好みで調整 */
+}
+
+.showMore:before {
+    content: '×'; /* クローズアイコン */
+    color: white;
+    font-size: 40px;
+}
+
+.showMore:hover:before {
+    color: #ccc; /* ホバー時の色変更 */
+}
+
+
+.showopen {
+    cursor: pointer; /* カーソルをポインタに設定 */
+    border: none; /* ボーダーを削除 */
+    padding: 10px 20px; /* パディングを設定 */
+    font-size: 16px; /* フォントサイズの調整 */
+    background-color: white;
+    color: rgb(67, 64, 230);
+    transition: color 0.3s ease; /* 透明度の変化を0.3秒かけて適用 */
+}
+
+.showopen:hover {
+    color: rgb(65, 62, 241,0.3);
+}
