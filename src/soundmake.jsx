@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/header.jsx';
 import './assets/otherwork.css';
 import './assets/soundmake.css';
+import './assets/card.css'; // CSSファイルをインポート
+import FullScreenMenu from './components/hamburger.jsx';
 
 
 const Card = ({ title, description,url}) => (
@@ -26,6 +28,7 @@ const Card = ({ title, description,url}) => (
         <div className="soundmake-card-other-work">
             <h3 className='card-other-work-title'>soundmake</h3>
             <p>test</p>
+            <FullScreenMenu/> 
         </div>
 
 

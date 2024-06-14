@@ -1,0 +1,40 @@
+.fullscreen-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex; /* フレックスボックスを使って中央揃え */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: left; /* テキストの中央揃え */
+    z-index: 999;
+    white-space: normal; /* テキストが自然に折り返されるように設定 */
+}
+
+.description_detail {
+    width: 70%;
+}
+
+
+/* background-color: rgba(0, 0, 0, 0.9); */
+.fullscreen-text ul {
+    list-style: none;
+    text-align: center;
+}
+
+.fullscreen-text ul li {
+    padding: 10px;
+}
+
+.fullscreen-text ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.fullscreen-text ul li a:hover {
+    text-decoration: underline;
+}
