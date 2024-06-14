@@ -18,7 +18,7 @@ const Header = ({title}) => {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/Vocaloid">Vocaloid Original</Link></li>
-                    <li><Link to="/Soundmake">Sound Make</Link></li>
+                    {/* <li><Link to="/Soundmake">Sound Make</Link></li> */}
                     <li><Link to="/Otherwork">Other Works</Link></li>
                 </ul>
             </nav>

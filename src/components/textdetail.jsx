@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../assets/textdetail.css'; // CSSファイルをインポート
-import { Link } from 'react-router-dom';
 
 
 function TextWithBreaks(props) {
@@ -24,12 +23,13 @@ const FullScreenText = ({description_detail}) => {
 
     return (
         <>
-            <div className={`showMore ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                read more...
-            </div>
+            <button className={`showopen ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                read more
+            </button>
             {isOpen  && (
                 <div className="fullscreen-text ">
-                    <div className={`showMore ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>とじる</div>
+                    <div className={`showMore ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    </div>
                     <div className="description_detail" >
                     {TextWithBreaks(description_detail)}
                     </div>
