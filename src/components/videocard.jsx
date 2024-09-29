@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
-import '../assets/card.css'; // CSSファイルをインポート
-import FullScreenText from './textdetail.jsx';
-function VideoCard({ url, title, description, date, credit,description_detail }) {
-
-
+import React, { useState } from "react";
+import "../assets/card.css"; // CSSファイルをインポート
+import FullScreenText from "./textdetail.jsx";
+function VideoCard({
+  url,
+  title,
+  description,
+  date,
+  credit,
+  description_detail,
+}) {
   return (
-    <div className='card' >
+    <div className="card">
       <div className="video-responsive">
         <iframe
           src={url}
@@ -19,9 +24,8 @@ function VideoCard({ url, title, description, date, credit,description_detail })
         <h2 className="card-title">{title}</h2>
         <p className="card-date">{date}</p>
         <p className="card-description">{description}</p>
-        <FullScreenText description_detail = {description_detail}/> 
+        <FullScreenText description_detail={description_detail} />
         <p className="card-credit">{credit}</p>
-
       </div>
     </div>
   );
