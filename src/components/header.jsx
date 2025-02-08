@@ -25,9 +25,11 @@ const Header = ({ title }) => {
             <li>
               <Link to="/Vocaloid">Vocaloid Original</Link>
             </li>
-            {/* <li><Link to="/Soundmake">Sound Make</Link></li> */}
             <li>
               <Link to="/Otherwork">Other Works</Link>
+            </li>
+            <li>
+              <Link to="/Discography">Discography</Link>
             </li>
           </ul>
         </nav>
