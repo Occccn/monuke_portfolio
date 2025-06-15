@@ -23,14 +23,13 @@ function VideoGallery() {
       const dateB = new Date(b.date);
       return sortOrder === "desc" ? dateB - dateA : dateA - dateB;
     })
-
     .filter((video) => {
       return featFilter === "all" || video.feat.includes(featFilter);
     });
 
   return (
-    <div className="container">
-      <div className="radio-group">
+    <>
+      <div className="radio-group mt-32">
         <div className="sort-group">
           <input
             type="radio"
@@ -99,20 +98,23 @@ function VideoGallery() {
           </label>
         </div>
       </div>
-
-      {filteredSortedVideos.map((video) => (
-        <VideoCard
-          key={video.url}
-          url={video.url}
-          title={video.title}
-          description={video.description}
-          date={video.date}
-          credit={video.credit}
-          feat={video.feat}
-          description_detail={video.description_detail}
-        />
-      ))}
-    </div>
+      <div className="flex justify-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+          {filteredSortedVideos.map((video) => (
+            <VideoCard
+              key={video.url}
+              url={video.url}
+              title={video.title}
+              description={video.description}
+              date={video.date}
+              credit={video.credit}
+              feat={video.feat}
+              description_detail={video.description_detail}
+            />
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
 
