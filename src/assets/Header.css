@@ -2,16 +2,6 @@
 
 h1 {
     will-change: transform, opacity; /* アニメーションの前に設定 */
-    text-align: left;
-    margin: 0;
-    color: transparent; /* 初期状態でテキストを透明に */
-    font-size: 40px;
-    margin-left: 10%;
-    margin-top: 10px;
-    width:50%;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap; /* 改行されないようにする */
     animation: revealText 1.5s ease 1.5s forwards; /* テキストの色が変わるアニメーション */
 }
 
@@ -46,33 +36,12 @@ h1:after {
     background-color: #f4f4f4;
 }
 
-.header-nav ul {
-    list-style-type: none; /* リストの記号を消す */
-    padding: 0;
-    display: flex; /* リンクを横に並べる */
-    gap: 10px; /* リンク間の隙間 */
-    font-size: 20px; /* フォントサイズ */
-}
-
-.header-nav ul li a {
-    text-decoration: none;
-    color: #f4f4f4;
-    padding: 5px 10px;
-
-    transition: background-color 0.3s;
-}
-
-.header-nav ul li a:hover {
-    color: #333;
-}
-
 /* Header.css */
-.header-nav {
-    display: block; /* 通常は表示 */
-}
+/* .header-navのdisplay関連CSSを削除 */
 
 @media (max-width: 768px) {
     .header-nav {
         display: none; /* スマホでは非表示 */
     }
 }
+    
