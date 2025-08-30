@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header.jsx";
 import "./assets/card.css";
+import "./assets/otherwork.css";
 import OtherCard from "./components/othercard";
 
 const Card = ({ title, description, url }) => (
