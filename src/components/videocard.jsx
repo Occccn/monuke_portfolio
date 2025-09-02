@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../assets/card.css"; // CSSファイルをインポート
 import FullScreenText from "./textdetail.jsx";
 function VideoCard({
   url,
