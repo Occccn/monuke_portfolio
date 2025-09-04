@@ -29,7 +29,7 @@ const Otherwork = () => {
   return (
     <>
       <Header title="Others" />
-      <div className="flex flex-col items-center mt-25 mx-auto w-75">
+      <div className="flex flex-col items-center mt-25 mx-auto w-full max-w-4xl px-4">
         {cardsData.map((card) => (
           <OtherCard
             key={card.url}

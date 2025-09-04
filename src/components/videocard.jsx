@@ -9,8 +9,8 @@ function VideoCard({
   description_detail,
 }) {
   return (
-    <div className="w-full h-full">
-      <div className="bg-white m-5 overflow-hidden transition-all duration-300 w-120 h-120 flex flex-col border-b border-[#d0caca]">
+    <div className="w-full">
+      <div className="bg-white overflow-hidden transition-all duration-300 w-full flex flex-col border-b border-[#d0caca] shadow-sm">
         <div className="relative pb-[56.25%] h-0">
           <iframe
             className="absolute top-0 left-0 w-full h-full border-0"

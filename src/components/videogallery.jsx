@@ -27,7 +27,7 @@ function VideoGallery() {
 
   return (
     <>
-      <div className="flex justify-center items-center gap-2.5 w-full flex-col mb-7.5 md:flex-row mt-32">
+      <div className="flex justify-center items-center gap-2.5 w-full flex-col mb-7.5 md:flex-row mt-32 px-4 max-w-6xl mx-auto">
         <div className="flex items-center gap-2.5 mr-2.5 mt-17.5">
           <input
             type="radio"
@@ -121,8 +121,8 @@ function VideoGallery() {
           </label>
         </div>
       </div>
-      <div className="flex justify-center w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+      <div className="w-full px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-6xl mx-auto">
           {filteredSortedVideos.map((video) => (
             <VideoCard
               key={video.url}

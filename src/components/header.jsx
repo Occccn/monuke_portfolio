@@ -12,12 +12,12 @@ const Header = ({ title }) => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-10 bg-[#0f9e7f] h-[120px] shadow-lg flex items-center">
+      <header className="fixed top-0 left-0 w-full z-10 bg-[#0f9e7f] h-[120px] shadow-lg flex items-center px-4">
         <div className="header-title flex-grow">
-          <h2 className="subtitle text-left m-0 text-white text-[20px] ml-[10%]">
+          <h2 className="subtitle text-left m-0 text-white text-[20px] ml-2 sm:ml-[10%]">
             monuke
           </h2>
-          <h1 className="text-left m-0 text-transparent text-[40px] ml-[10%] mt-[10px] w-1/2 relative overflow-hidden whitespace-nowrap font-bold leading-[1.1]">
+          <h1 className="text-left m-0 text-transparent text-[32px] sm:text-[40px] ml-2 sm:ml-[10%] mt-[10px] w-full sm:w-1/2 relative overflow-hidden whitespace-nowrap font-bold leading-[1.1]">
             {title}
           </h1>
         </div>

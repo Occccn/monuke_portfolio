@@ -21,11 +21,11 @@ const CenterImage = () => {
   }, []); // 空の依存配列を渡して、エフェクトがマウント時にのみ実行されるようにする
 
   return (
-    <div className="flex justify-center items-center pt-30">
+    <div className="flex justify-center items-center pt-30 px-4">
       <img
         src={value}
         alt="Circular Icon"
-        className="rounded-full w-62 h-62 object-cover shadow-md max-w-full opacity-0"
+        className="rounded-full w-48 h-48 sm:w-62 sm:h-62 object-cover shadow-md max-w-full opacity-0"
         style={{
           animation: "fadeInScale 1s ease-out forwards",
         }}
