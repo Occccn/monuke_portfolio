@@ -4,11 +4,11 @@ import VideoGallery from "./components/videogallery.jsx";
 
 function Vocaloid() {
   return (
-    <>
+    <div className="w-full min-h-screen">
       <Header title="Vocaloid" />
       <VideoGallery />
-    </>
+    </div>
   );
 }
-("https://www.youtube.com/embed/nGn0XnAxUeA?si=v4hOA7hjB7yw6HoE");
+
 export default Vocaloid;

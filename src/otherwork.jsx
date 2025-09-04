@@ -1,21 +1,7 @@
 import React from "react";
 import Header from "./components/header.jsx";
-import "./assets/card.css";
+// import "./assets/card.css";
 import OtherCard from "./components/othercard";
-
-const Card = ({ title, description, url }) => (
-  <div className="card-other-work">
-    <h3 className="card-other-work-title">{title}</h3>
-    <div className="card-video-responsive">
-      <iframe
-        src={url}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
-    <p>{description}</p>
-  </div>
-);
 
 const Otherwork = () => {
   const cardsData = [
@@ -43,7 +29,7 @@ const Otherwork = () => {
   return (
     <>
       <Header title="Others" />
-      <div className="container-other">
+      <div className="flex flex-col items-center mt-25 mx-auto w-full max-w-4xl px-4">
         {cardsData.map((card) => (
           <OtherCard
             key={card.url}

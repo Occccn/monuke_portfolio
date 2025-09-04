@@ -1,32 +1,6 @@
-header {
-    position: fixed; /* ヘッダーをページの上部に固定 */
-    top: 0;
-    left: 0;
-    width: 100%; /* ヘッダーの幅を画面全体に広げる */
-    z-index: 10; /* ヘッダーが他の要素より前面にくるように設定 */
-    background-color: #0f9e7f;
-    height: 120px; /* ヘッダーの高さを80pxに設定 */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-    display: flex; /* 子要素を横並びにする */
-    align-items: center; /* 子要素を中央揃え（垂直方向） */
-}
-
-
-
-
 
 h1 {
     will-change: transform, opacity; /* アニメーションの前に設定 */
-    text-align: left;
-    margin: 0;
-    color: transparent; /* 初期状態でテキストを透明に */
-    font-size: 40px;
-    margin-left: 10%;
-    margin-top: 10px;
-    width:50%;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap; /* 改行されないようにする */
     animation: revealText 1.5s ease 1.5s forwards; /* テキストの色が変わるアニメーション */
 }
 
@@ -51,62 +25,4 @@ h1:after {
     30% { left: -100%; }
     75% { left: 0; }
     100% { left: 100%; }
-}
-
-
-
-.subtitle {
-    text-align: left; /* タイトルのテキストを中央揃え */
-    margin: 0; /* マージンをなくす */
-    color: white;
-    font-size: 20px;
-    margin-left: 10%;
-}
-
-.header-title {
-    flex-grow: 1; /* h1タグが残りのスペースを埋める */
-}
-
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
-}
-
-
-
-.header-nav ul {
-    list-style-type: none; /* リストの記号を消す */
-    padding: 0;
-    display: flex; /* リンクを横に並べる */
-    gap: 10px; /* リンク間の隙間 */
-    font-size: 20px; /* フォントサイズ */
-}
-
-.header-nav ul li a {
-    text-decoration: none;
-    color: #f4f4f4;
-    padding: 5px 10px;
-
-    transition: background-color 0.3s;
-}
-
-.header-nav ul li a:hover {
-    color: #333;
-}
-
-
-/* Header.css */
-.header-nav {
-    display: block; /* 通常は表示 */
-}
-
-
-@media (max-width: 768px) {
-    .header-nav {
-        display: none; /* スマホでは非表示 */
-    }
 }

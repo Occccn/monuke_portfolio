@@ -4,6 +4,7 @@ import { FaYoutube, FaTwitter, FaVideo } from "react-icons/fa";
 function SocialLinks() {
   return (
     <div
+      className="flex justify-center gap-5 mt-5 px-4"
       style={{
         display: "flex",
         justifyContent: "center",
