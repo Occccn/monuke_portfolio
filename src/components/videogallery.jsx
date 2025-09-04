@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import VideoCard from "./videocard";
-import "../assets/videogallery.css";
 import { videos } from "../data/video-content.js";
 
 function VideoGallery() {
