@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import VideoCard from "./videocard";
-import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import "../assets/videogallery.css";
 import { videos } from "../data/video-content.js";
 
@@ -29,8 +28,8 @@ function VideoGallery() {
 
   return (
     <>
-      <div className="radio-group mt-32">
-        <div className="sort-group">
+      <div className="flex justify-center items-center gap-2.5 w-full flex-col mb-7.5 md:flex-row mt-32">
+        <div className="flex items-center gap-2.5 mr-2.5 mt-17.5">
           <input
             type="radio"
             id="asc"
@@ -40,7 +39,12 @@ function VideoGallery() {
             checked={sortOrder === "asc"}
             onChange={handleSortChange}
           />
-          <label className="radio-label-sort" htmlFor="asc">
+          <label
+            className={`px-5 py-2.5 cursor-pointer opacity-100 text-black transition-colors duration-300 select-none hover:text-black/30 ${
+              sortOrder === "asc" ? "border-b-2 border-[#e12885]" : ""
+            }`}
+            htmlFor="asc"
+          >
             古い順
           </label>
 
@@ -53,11 +57,16 @@ function VideoGallery() {
             checked={sortOrder === "desc"}
             onChange={handleSortChange}
           />
-          <label className="radio-label-sort" htmlFor="desc">
+          <label
+            className={`px-5 py-2.5 cursor-pointer opacity-100 text-black transition-colors duration-300 select-none hover:text-black/30 ${
+              sortOrder === "desc" ? "border-b-2 border-[#e12885]" : ""
+            }`}
+            htmlFor="desc"
+          >
             新しい順
           </label>
         </div>
-        <div className="feat-group">
+        <div className="flex items-center gap-2.5 mt-0 md:mt-17.5">
           <input
             type="radio"
             id="all"
@@ -67,7 +76,12 @@ function VideoGallery() {
             checked={featFilter === "all"}
             onChange={handleFeatChange}
           />
-          <label className="radio-label-feat" htmlFor="all">
+          <label
+            className={`px-5 py-2.5 cursor-pointer opacity-100 text-black transition-colors duration-300 select-none hover:text-black/30 ${
+              featFilter === "all" ? "border-b-2 border-[#e12885]" : ""
+            }`}
+            htmlFor="all"
+          >
             All
           </label>
 
@@ -80,7 +94,12 @@ function VideoGallery() {
             checked={featFilter === "hatune"}
             onChange={handleFeatChange}
           />
-          <label className="radio-label-feat" htmlFor="hatune">
+          <label
+            className={`px-5 py-2.5 cursor-pointer opacity-100 text-black transition-colors duration-300 select-none hover:text-black/30 ${
+              featFilter === "hatune" ? "border-b-2 border-[#e12885]" : ""
+            }`}
+            htmlFor="hatune"
+          >
             初音ミク
           </label>
 
@@ -93,7 +112,12 @@ function VideoGallery() {
             checked={featFilter === "chisei"}
             onChange={handleFeatChange}
           />
-          <label className="radio-label-feat" htmlFor="chisei">
+          <label
+            className={`px-5 py-2.5 cursor-pointer opacity-100 text-black transition-colors duration-300 select-none hover:text-black/30 ${
+              featFilter === "chisei" ? "border-b-2 border-[#e12885]" : ""
+            }`}
+            htmlFor="chisei"
+          >
             知声
           </label>
         </div>
