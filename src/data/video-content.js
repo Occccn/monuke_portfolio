@@ -2,13 +2,13 @@ export const videos = [
   {
     url: "https://www.youtube.com/embed/HZkSz-HUr6M?si=Q--YqfUWFikVf57A",
     title: "はるふらふら / monuke feat.知声",
-    description: "物語性のある歌詞を書こうと思い、...",
+    description: "知声によるのんびりRap。...",
     date: "2025/05/04",
     credit: "動画: monuke",
     feat: "chisei",
     description_detail: [
-      "物語性のある歌詞を書こうと思い、所謂「界隈曲」から着想を得ました。エレベーターが舞台なのは単純に普段の生活で怖いと思ったからです。スライス、逆再生、テンポ変更など、やってみたかったけどやっていなかったことを詰め込みました。",
-      "この曲はいろんな方に好きだと言って貰えてとても嬉しかった。私も気に入っています。",
+      "知声によるのんびりRap。ムードはちょっと「harumachi」と似ていますが、音作りはだいぶ良くなってきてるんじゃないかな〜と思います。",
+      "1st ep「feel_」収録曲です。",
     ],
   },
   {
