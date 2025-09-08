@@ -1,5 +1,14 @@
-import React, { useState } from "react";
 import FullScreenText from "./textdetail.jsx";
+
+interface VideoCardProps {
+  url: string;
+  title: string;
+  description: string;
+  date: string;
+  credit: string;
+  description_detail: string[];
+}
+
 function VideoCard({
   url,
   title,
@@ -7,7 +16,7 @@ function VideoCard({
   date,
   credit,
   description_detail,
-}) {
+}: VideoCardProps) {
   return (
     <div className="w-full">
       <div className="bg-white overflow-hidden transition-all duration-300 w-full flex flex-col border-b border-[#d0caca] shadow-sm">
