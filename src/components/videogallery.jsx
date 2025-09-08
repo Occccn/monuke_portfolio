@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import VideoCard from "./videocard";
-import { videos } from "../data/video-content.js";
+import { videos } from "../data/video-content";
 
 function VideoGallery() {
   const [sortOrder, setSortOrder] = useState("desc");
