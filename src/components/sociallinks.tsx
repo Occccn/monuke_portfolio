@@ -1,4 +1,3 @@
-import React from "react";
 import { FaYoutube, FaTwitter, FaVideo } from "react-icons/fa";
 
 function SocialLinks() {

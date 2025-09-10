@@ -6,7 +6,7 @@ interface OtherCardProps {
 
 function OtherCard({ url, title, description }: OtherCardProps) {
   return (
-    <div className="card bg-white m-5 border-b border-[#d0caca] w-full">
+    <div className="card bg-white m-5 border-b border-[#d0caca] w-full max-w-lg mx-auto">
       <h2 className="self-start text-2xl mb-2.5 mt-0">{title}</h2>
       <div className="relative pb-[56.25%] h-0">
         <iframe

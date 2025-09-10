@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+
+type ImageName = "monuke.png" | "monuke1.jpg" | "monuke3.jpg";
 
 const CenterImage = () => {
-  const [value, setValue] = useState("monuke.png"); // 変数Aの初期値
+  const [value, setValue] = useState<ImageName>("monuke.png"); // 変数Aの初期値
+
   useEffect(() => {
     const generateRandomNumber = () => {
       const randomNumber = Math.random(); // 0 から 1 の乱数を生成
       console.log("Generated Random Number: ", randomNumber); // 生成された乱数をコンソールに出力
 
       // 乱数に基づいて変数Aの値を更新
-
       if (randomNumber < 0.33) {
         setValue("monuke.png");
       } else if (randomNumber < 0.66) {
