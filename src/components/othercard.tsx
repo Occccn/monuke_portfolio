@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+interface OtherCardProps {
+  url: string;
+  title: string;
+  description: string;
+}
 
-function OtherCard({ url, title, description }) {
+function OtherCard({ url, title, description }: OtherCardProps) {
   return (
     <div className="card bg-white m-5 border-b border-[#d0caca] w-full">
       <h2 className="self-start text-2xl mb-2.5 mt-0">{title}</h2>
