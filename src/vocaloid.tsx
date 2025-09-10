@@ -1,6 +1,5 @@
-import React from "react";
 import Header from "./components/header.jsx";
-import VideoGallery from "./components/videogallery.jsx";
+import VideoGallery from "./components/videogallery";
 
 function Vocaloid() {
   return (

@@ -1,15 +1,12 @@
-import React, { useState } from "react";
 import "../assets/Header.css"; // CSSファイルをインポート
 import { Link } from "react-router-dom";
 import FullScreenMenu from "./hamburger.jsx";
 
-const Header = ({ title }) => {
-  const [isOpen, setIsOpen] = useState(false);
+interface HeaderProps {
+  title: string;
+}
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Header = ({ title }: HeaderProps) => {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-10 bg-[#0f9e7f] h-[120px] shadow-lg flex items-center px-4">

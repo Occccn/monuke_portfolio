@@ -1,6 +1,7 @@
 import Header from "./components/header.jsx";
 import CenterImage from "./components/centerimage.jsx";
 import SocialLinks from "./components/sociallinks.jsx";
+
 function App() {
   return (
     <>
@@ -17,4 +18,5 @@ function App() {
     </>
   );
 }
+
 export default App;

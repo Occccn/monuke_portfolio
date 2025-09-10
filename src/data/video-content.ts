@@ -1,4 +1,14 @@
-export const videos = [
+export interface Video {
+  url: string;
+  title: string;
+  description: string;
+  date: string;
+  credit: string;
+  feat: string;
+  description_detail: string[];
+}
+
+export const videos: Video[] = [
   {
     url: "https://www.youtube.com/embed/HZkSz-HUr6M?si=Q--YqfUWFikVf57A",
     title: "はるふらふら / monuke feat.知声",
