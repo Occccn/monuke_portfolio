@@ -1,4 +1,4 @@
-import FullScreenText from "./textdetail.jsx";
+import TextDetail from "./TextDetail";
 
 interface VideoCardProps {
   url: string;
@@ -33,7 +33,7 @@ function VideoCard({
           <h2 className="text-lg mb-2">{title}</h2>
           <p className="text-sm text-gray-500 mb-4">{date}</p>
           <p className="text-sm text-gray-500 mb-4">{description}</p>
-          <FullScreenText description_detail={description_detail} />
+          <TextDetail description_detail={description_detail} />
           <p className="text-[10px] text-gray-500 mt-auto self-end mb-0">
             {credit}
           </p>

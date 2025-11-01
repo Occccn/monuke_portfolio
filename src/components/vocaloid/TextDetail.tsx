@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-interface FullScreenTextProps {
+interface TextDetailProps {
   description_detail: string[];
 }
 
-const FullScreenText = ({ description_detail }: FullScreenTextProps) => {
+const TextDetail = ({ description_detail }: TextDetailProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -40,4 +40,4 @@ const FullScreenText = ({ description_detail }: FullScreenTextProps) => {
   );
 };
 
-export default FullScreenText;
+export default TextDetail;

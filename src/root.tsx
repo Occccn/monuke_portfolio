@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./App.jsx";
-import Vocaloid from "./vocaloid.jsx";
-import Otherwork from "./otherwork.jsx";
+import App from "./App";
+import Vocaloid from "./vocaloid";
+import Otherwork from "./otherwork";
 
 function Root() {
   return (

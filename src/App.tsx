@@ -1,6 +1,6 @@
-import Header from "./components/header.jsx";
-import CenterImage from "./components/centerimage.jsx";
-import SocialLinks from "./components/sociallinks.jsx";
+import Header from "./components/common/Header";
+import CenterImage from "./components/home/CenterImage";
+import SocialLinks from "./components/home/SocialLinks";
 
 function App() {
   return (
