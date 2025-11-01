@@ -1,5 +1,5 @@
-import Header from "./components/header.jsx";
-import OtherCard from "./components/othercard";
+import Header from "./components/common/Header";
+import OtherCard from "./components/otherwork/OtherCard";
 import { otherworkCards } from "./data/otherwork-content";
 
 const Otherwork = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { VideoSortProps } from "../types/video";
+import { VideoSortProps } from "../../types/video";
 
 const VideoSort: React.FC<VideoSortProps> = ({ sortOrder, onSortChange }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { VideoFilterProps } from "../types/video";
+import { VideoFilterProps } from "../../types/video";
 
 const VideoFilter: React.FC<VideoFilterProps> = ({
   featFilter,

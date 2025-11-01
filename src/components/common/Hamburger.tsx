@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const FullScreenMenu = () => {
+const Hamburger = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -70,4 +70,4 @@ const FullScreenMenu = () => {
   );
 };
 
-export default FullScreenMenu;
+export default Hamburger;

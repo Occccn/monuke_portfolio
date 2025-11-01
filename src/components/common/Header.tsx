@@ -1,6 +1,6 @@
-import "../assets/Header.css"; // CSSファイルをインポート
+import "../../assets/Header.css"; // CSSファイルをインポート
 import { Link } from "react-router-dom";
-import FullScreenMenu from "./hamburger.jsx";
+import Hamburger from "./Hamburger";
 
 interface HeaderProps {
   title: string;
@@ -47,7 +47,7 @@ const Header = ({ title }: HeaderProps) => {
             </li>
           </ul>
         </nav>
-        <FullScreenMenu />
+        <Hamburger />
       </header>
     </>
   );

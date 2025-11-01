@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import VideoCard from "./videocard";
+import VideoCard from "./VideoCard";
 import VideoSort from "./VideoSort";
 import VideoFilter from "./VideoFilter";
-import { videos, Video } from "../data/video-content";
-import { SortOrder, FeatFilter } from "../types/video";
+import { videos, Video } from "../../data/video-content";
+import { SortOrder, FeatFilter } from "../../types/video";
 
 function VideoGallery() {
   const [sortOrder, setSortOrder] = useState<SortOrder>("desc");
