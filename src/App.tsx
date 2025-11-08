@@ -23,7 +23,7 @@ function App() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://monuke-f472b.web.app" />
-        <link ref="canonical" href="https://monuke-f472b.web.app" />
+        <link rel="canonical" href="https://monuke-f472b.web.app" />
       </Helmet>
       <Header title="Home" />
       <div className="mt-32">
