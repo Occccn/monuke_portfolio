@@ -15,6 +15,7 @@ function SocialLinks() {
         href="https://www.youtube.com/@monuke_y_y"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="monuke の YouTube"
       >
         <FaYoutube color="#00001C" size={24} />
       </a>
@@ -22,6 +23,7 @@ function SocialLinks() {
         href="https://www.nicovideo.jp/user/32361547"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="monuke のニコニコ動画"
       >
         <FaVideo color="#00001C" size={24} />
       </a>
@@ -30,6 +32,7 @@ function SocialLinks() {
         href="https://x.com/monukenoyamada"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="monuke の X"
       >
         <FaTwitter color="#00001C" size={24} />
       </a>
